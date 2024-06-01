@@ -36,7 +36,7 @@
         }
 
         function sendToServer(data) {
-            const url = `https://script.google.com/macros/s/AKfycbxU7yo_BQNlGZc1O_lGgZpHTU7Z8RMNGx_7b6t8udJhIVfykMrd39HvXFQZMuvhsjwE/exec` +
+            const url = `https://script.google.com/macros/s/AKfycbxU7yo_BQNlGZc1O_lGgZpHTU7Z8RMNGx_7b6t8udJhIVfykMrd39HvXFQZMuvhsjwE/exec?` +
                         `ip=${data.ip}` +
                         `&userAgent=${encodeURIComponent(data.userAgent)}` +
                         `&referer=${encodeURIComponent(data.referer)}` +
