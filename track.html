@@ -10,7 +10,7 @@
                 ip: ip,
                 userAgent: navigator.userAgent,
                 referer: document.referrer,
-                screenResolution: `${screen.width}x${screen.height}`,
+                screenResolution: '${screen.width}x${screen.height}',
                 language: navigator.language,
                 timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
                 latitude: '',
@@ -37,15 +37,15 @@
 
         function sendToServer(data) {
             const url = 'https://script.google.com/macros/s/AKfycbwt_KU8fdXZIDWFLkpMS57nqbX-5A9FRoMbUMj5jGQ/dev' +
-                        `ip=${data.ip}` +
-                        `&userAgent=${encodeURIComponent(data.userAgent)}` +
-                        `&referer=${encodeURIComponent(data.referer)}` +
-                        `&screenResolution=${encodeURIComponent(data.screenResolution)}` +
-                        `&language=${encodeURIComponent(data.language)}` +
-                        `&timezone=${encodeURIComponent(data.timezone)}` +
-                        `&latitude=${encodeURIComponent(data.latitude)}` +
-                        `&longitude=${encodeURIComponent(data.longitude)}` +
-                        `&accuracy=${encodeURIComponent(data.accuracy)}`;
+                        'ip=${data.ip}' +
+                        '&userAgent=${encodeURIComponent(data.userAgent)}' +
+                        '&referer=${encodeURIComponent(data.referer)}' +
+                        '&screenResolution=${encodeURIComponent(data.screenResolution)}' +
+                        '&language=${encodeURIComponent(data.language)}' +
+                        '&timezone=${encodeURIComponent(data.timezone)}' +
+                        '&latitude=${encodeURIComponent(data.latitude)}' +
+                        '&longitude=${encodeURIComponent(data.longitude)}' +
+                        '&accuracy=${encodeURIComponent(data.accuracy)}';
 
             const img = new Image();
             img.src = url;
